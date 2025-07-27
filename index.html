@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yahya Muxumed" />
+    <title>Welcome to My Personal Website</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Header with navigation bar -->
+    <header>
+      <nav id="navbar">
+        <ul class="nav-list">
+          <!-- Internal page links -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#countries">Countries</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- External link opens in a new tab -->
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Linus_Torvalds"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Inspiration</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main id="about">
+      <!-- About section -->
+      <section>
+        <h1>Hi, I'm Yahya 👋</h1>
+        <h2>Aspiring Cloud & Software Engineer</h2>
+        <h3>Learning, Building, Growing</h3>
+        <p class="bio">
+          I'm passionate about software, DevOps, and making systems run
+          efficiently. I enjoy solving technical challenges, collaborating with
+          great people, and continuously learning.
+        </p>
+        <!-- Illustrative image -->
+        <img
+          src="undraw_programming_65t2.svg"
+          alt="Illustration of a person coding"
+          width="200"
+          loading="lazy"
+        />
+        <!-- List of interests -->
+        <ul class="interests">
+          <li>🚀 DevOps & Automation</li>
+          <li>💻 Coding in JavaScript & Python</li>
+          <li>☁️ Cloud Technologies</li>
+        </ul>
+      </section>
+
+      <!-- Countries section with a data table -->
+      <section id="countries">
+        <h2>Countries I Find Interesting</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Capital</th>
+              <th>Continent</th>
+              <th>Language</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Japan</td>
+              <td>Tokyo</td>
+              <td>Asia</td>
+              <td>Japanese</td>
+            </tr>
+            <tr>
+              <td>Canada</td>
+              <td>Ottawa</td>
+              <td>North America</td>
+              <td>English, French</td>
+            </tr>
+            <tr>
+              <td>Turkey</td>
+              <td>Ankara</td>
+              <td>Asia/Europe</td>
+              <td>Turkish</td>
+            </tr>
+            <tr>
+              <td>Somalia</td>
+              <td>Mogadishu</td>
+              <td>Africa</td>
+              <td>Somali</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Contact form section -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <!-- Name input field -->
+          <label for="name" class="input-box">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <!-- Email input field -->
+          <label for="email" class="input-box">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <!-- Radio buttons for source of contact -->
+          <fieldset class="form-group">
+            <legend>How did you find me?</legend>
+            <label>
+              <input type="radio" name="source" value="linkedin" /> LinkedIn
+            </label>
+            <label>
+              <input type="radio" name="source" value="github" /> GitHub
+            </label>
+          </fieldset>
+
+          <!-- Submit button -->
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer with copyright -->
+    <footer>
+      <p>&copy; 2025 Yahya Muxumed - Built with ❤️ and CSS</p>
+    </footer>
+
+    <!-- SweetAlert2 library for nicer alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Link to external JavaScript file  -->
+    <script src="index.js"></script>
+  </body>
+</html>

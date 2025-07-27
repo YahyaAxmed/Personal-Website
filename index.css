@@ -1,0 +1,183 @@
+/* Reset box-sizing and smooth scrolling */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Base body styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgba(0,138,206,0.1) 0%, rgba(255,255,255,0) 100%);
+  color: #333;
+}
+
+/* Navbar styles */
+#navbar {
+  background-color: #1e293b;
+  position: fixed; /* fixed on top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  z-index: 999; /* ensure navbar is above other elements */
+}
+
+/* Navbar list flexbox layout */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar links styling */
+#navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for navbar links */
+#navbar a:hover {
+  color: white;
+  background-color: #4f46e5;
+}
+
+/* Main content container */
+main {
+  padding-top: 100px; /* offset for fixed navbar */
+  padding-bottom: 50px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* Bio paragraph max width */
+.bio {
+  max-width: 600px;
+}
+
+/* Section spacing */
+section {
+  margin: 2rem 0;
+}
+
+/* Form container styling */
+form {
+  background-color: #f1f5f9;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+/* Image styling */
+img {
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Table layout and spacing */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+/* Borders and padding for table elements */
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Header row background */
+th {
+  background-color: #f0f0f0;
+}
+
+/* Flexbox for interests list */
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Footer styling */
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: auto;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  /* Stack navbar links vertically on small screens */
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Stack interests vertically on small screens */
+  .interests {
+    flex-direction: column;
+  }
+}
+
+/* Submit button base styles */
+button[type="submit"] {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Submit button hover effect */
+button[type="submit"]:hover {
+  background-color: #3730a3;
+  transform: scale(1.05);
+}
+
+/* Form group styles (fieldset) */
+.form-group {
+  border: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Legend inside fieldset */
+.form-group legend {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+}
+
+/* Labels inside form groups */
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Label widths for form inputs */
+.input-box {
+  display: inline-block;
+  width: 60px; /* fixed width for all labels */
+  font-weight: 600;
+}
