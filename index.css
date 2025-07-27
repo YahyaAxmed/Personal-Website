@@ -138,13 +138,14 @@ footer {
   
   /* Add horizontal padding to body and main for breathing room */
   body {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0;
+    margin: 0;
   }
 
   main {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 100px 1rem 50px;
+    max-width: 900px;
+    margin: 0 auto;
   }
 }
 
