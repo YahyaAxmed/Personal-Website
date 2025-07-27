@@ -29,9 +29,10 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem; /* More spacing */
   margin: 0;
   padding: 0;
+  font-size: 1.1rem; /* Bigger text */
 }
 
 /* Navbar links styling */
@@ -39,10 +40,11 @@ body {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  padding: 8px 15px;
-  border-radius: 4px;
+  padding: 10px 20px; /* Slightly more padding */
+  border-radius: 6px;
   transition: color 0.3s ease, background-color 0.3s ease;
 }
+
 
 /* Hover effect for navbar links */
 #navbar a:hover {
@@ -180,4 +182,47 @@ button[type="submit"]:hover {
   display: inline-block;
   width: 60px; /* fixed width for all labels */
   font-weight: 600;
+}
+
+/* Navbar inner layout */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Hamburger menu button (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #1e293b;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: none;
+  }
+
+  .nav-list.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
