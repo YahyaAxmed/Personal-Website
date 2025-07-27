@@ -225,4 +225,19 @@ button[type="submit"]:hover {
   .menu-toggle {
     display: block;
   }
+  
+  .interests {
+    flex-direction: column;
+  }
+
+  
+  body {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  main {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
